@@ -1,0 +1,33 @@
+.todoControlPanel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  button {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #3a4d39;
+    transition: 0.1s background ease-in;
+    &:hover {
+      background-color: #3a4d39;
+      color: #f5f1e5;
+    }
+    &.delete {
+      &:hover {
+        background-color: #ff4242;
+        color: #f5f1e5;
+      }
+    }
+  }
+}
+
+.mr-1rem {
+  margin-right: 2rem;
+}
